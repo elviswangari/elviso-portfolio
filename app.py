@@ -31,25 +31,25 @@ def index():
 @app.route('/blog', strict_slashes=False)
 def blog():
     nav_data = get_navigation_data()
-    return render_template("index.html", nav_data=nav_data)
+    return render_template("blogs.html", nav_data=nav_data)
 
 
 @app.route('/courses', strict_slashes=False)
 def courses():
     nav_data = get_navigation_data()
-    return render_template("index.html", nav_data=nav_data)
+    return render_template("courses.html", nav_data=nav_data)
 
 
 @app.route('/about', strict_slashes=False)
 def about():
     nav_data = get_navigation_data()
-    return render_template("index.html", nav_data=nav_data)
+    return render_template("about.html", nav_data=nav_data)
 
 
 @app.route('/contact', strict_slashes=False)
 def contact():
     nav_data = get_navigation_data()
-    return render_template("index.html", nav_data=nav_data)
+    return render_template("contact.html", nav_data=nav_data)
 
 
 if __name__ == "__main__":
